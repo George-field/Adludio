@@ -7,10 +7,11 @@ module.exports = app => {
     app.get('/v1.0/amazon', async (req, res, next) => {
         //You would also want to add some headers to the request you send, for example application json, auth header ect
         const response = await api.getAwsData()
+        console.log(response)
         if(response.Contents){
             res.json({data: response}).status(200)
         }else{
-            res.send({error: "Internal Error"}).status(503)
+            res.send({error: "Internal Error", err: response.error.message}).status(503)
         }
     })
 }
