@@ -1,4 +1,5 @@
+//Config File for keys - We would need to use a .env file here that would assign env variables to these
 module.exports = {
-    AKI : "AKIAIKRCU6ZL6WDP3CNA",
-    SecretAccessKey : "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"
+    AKI : "AKIAIL2CGNRMS7JHW3AA",
+    SecretAccessKey : "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"
 }

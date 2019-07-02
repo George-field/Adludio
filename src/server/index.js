@@ -6,6 +6,8 @@ const app = Express();
 const port = 3000;
 
 // server static content
+require('./routes/routes')(app)
+
 app.use('/dist', Express.static('dist'));
 
 // register route handler
