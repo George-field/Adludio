@@ -14,6 +14,7 @@ delete window.__PRELOADED_STATE__; // eslint-disable-line no-underscore-dangle
 // Create Redux store with initial state
 const store = createReduxStore({ preloadedState });
 
+
 hydrate(
   <Provider store={store}>
     <BrowserRouter>
